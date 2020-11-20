@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Cyber Café </title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <style type="text/css"> 
+        
+            .divisao_01{
+                width: 370px;
+                height: 568px;
+                margin: 10px;
+                float: left;
+            }
+
+            .divisao_02{
+                width: 370px;
+                height: 568px;
+                margin: 10px;
+                float: left;
+            }
+            .foto_evento{
+                border-width: 5px;
+                border-color: #ffffff;
+                border-style: solid;
+            }
+        </style>
+
+                <script language="javascript" type="text/javascript">
+                    dayName = new Array ("domingo", "segunda", "terça", "quarta", "quinta", "sexta", "sábado")
+                    monName = new Array ("janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "outubro", "novembro", "dezembro")
+                    now = new Date
+                </script>
+
+    </head>
+<body>
+<div id="principal">
+    <div id="topo">
+        <div id="logo"> <a href="index.html"> <img src="img/logo.png"> </a> </div>
+        <div id="data">
+            <script language=javascript type="text/javascript">
+                document.write ("<p> Hoje é " + dayName[now.getDay() ] + ", " + now.getDate () + " de " + monName [now.getMonth() ]   +  " de "  +     now.getFullYear () + ". </p>")
+            </script>
+        </div>
+    </div>
+    <div id="menu_principal"> 
+        <div id="menu_item"> 
+            <a href="index.html"><div class="link"> Home </div> </a>
+            <a href="promocoes.html"> <div class="link"> Promoções </div> </a>
+            <a href="servicos.html"> <div class="link"> Serviços  </div> </a>
+            <a href="cardapio.html"> <div class="link"> Cardápio </div> </a>
+            <a href="eventos.html"> <div class="link"> Eventos </div> </a>
+            <a href="contato.html"> <div class="link"> Contatos </div> </a>
+        </div>               
+    </div>
+
+    <div id="conteudo">
+        <div class="divisao_01">
+            <img src="img/eventos/cs.jpg"  class="foto_evento">
+            <h1> Campeonato de Counter-Strike </h1>
+            <p> Um dos maiores campeonatos da Região está de volta e promete agitar. 
+                Vale a pena participar do campeonato e jogar com as principais equipes da região. 
+                Garanta o seu lugar agora mesmo e faça desse campeonato o sucesso de sempre.<br> <br>
+                <strong> Data: </strong> 22/08/2020 (sábado)<br>
+                Início às 8:00h (não será tolerado atrasos)<br> <br>
+                <strong> Inscrição: </strong> R$100,00 (R$20,00 por jogador)<br>
+                O pagamento deve ser realizado até um dia antes do evento. <br> <br>
+                <strong> Prêmios: </strong> 1° lugar - R$500,00<br>
+                                            2° lugar - R$400,00
+            </p>
+        </div>
+
+        <div class="divisao_02">
+            <img  src="img/eventos/informacao.jpg" class="foto_evento">
+            <h1> Tecnologia e Conhecimento </h1>
+            <p> Acreditamos que a tecnologia pode ajudar no processo de aprendizado de diversas áreas, além de 
+                tornar esse processo mais dinâmico e prático. <br> Por isso convidamos a todos a conhecerem 
+                nosso estabelecimento e conhecer um pouco mais sobre tecnologia, de uma forma totalmente 
+                gratuita. <br> Contamos com a ajuda de voluntários que tem conhecimento na área. 
+                Se você também quiser ser nosso voluntário, é só entrar em contato com a gente! <br>
+                <strong> Data: </strong> 09/08/2020 a partir das 8:30. 
+
+            </p>
+        </div>
+    </div>
+   <div id="rodape">  <p> 2000-2020 cybercafe.com Todos os direitos reservados </p> </div>
+</div>
+</body>
+</html>

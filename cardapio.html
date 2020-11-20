@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Cyber Café </title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <style type="text/css">
+                
+        .cardapio{
+            width: 210px;
+            height: 260px;
+            margin-left: 25px;
+            margin-right: 25px;
+            margin-top: 20px;
+            float: left;
+        }
+
+        .foto_cardapio{
+            border-style: solid;
+            border-width: 4px;
+            border-color: #ffffff;
+        }
+
+        .foto_cardapio:hover{
+            border-color: #FFCC00;
+        }
+
+        .a{
+            color: #ffffff;
+        }
+        .a:hover{
+            color: #FFCC00;
+        }
+        </style>
+                <script language="javascript" type="text/javascript">
+                    dayName = new Array ("domingo", "segunda", "terça", "quarta", "quinta", "sexta", "sábado")
+                    monName = new Array ("janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "outubro", "novembro", "dezembro")
+                    now = new Date
+                </script>
+
+                <script src="js/jquery-1.11.0.min.js"></script>
+                <script src="js/lightbox.min.js"></script>
+                <link href="css/lightbox.css" rel="stylesheet"/>
+    </head>
+<body>
+<div id="principal">
+    <div id="topo">
+        <div id="logo"> <a href="index.html"> <img src="img/logo.png"> </a> </div>
+        <div id="data">
+            <script language=javascript type="text/javascript">
+                document.write ("<p> Hoje é " + dayName[now.getDay() ] + ", " + now.getDate () + " de " + monName [now.getMonth() ]   +  " de "  +     now.getFullYear () + ". </p>")
+            </script>
+        </div>
+    </div>
+    <div id="menu_principal"> 
+        <div id="menu_item"> 
+            <a href="index.html"> <div class="link"> Home </div> </a>
+            <a href="promocoes.html"> <div class="link"> Promoções </div> </a>
+            <a href="servicos.html"> <div class="link"> Serviços  </div> </a>
+            <a href="cardapio.html"> <div class="link"> Cardápio </div> </a>
+            <a href="eventos.html"> <div class="link"> Eventos </div> </a>
+            <a href="contato.html"> <div class="link"> Contatos </div> </a>
+        </div>               
+    </div>
+
+   <div id="conteudo"> 
+
+    <div class="cardapio">
+        <a href="img/cardapio/pizza.jpg" data-lightbox="galeria_01"> 
+        <img src="img/mini/pizza.jpg" div class="foto_cardapio"> </a>
+        <h1> Pizza </h1>
+        <a href="pizza.html"> <div class="a">  * Ver cardápio completo * </div>  </a>
+    </div>
+
+    <div class="cardapio"> 
+        <a href="img/cardapio/salada.jpg" data-lightbox="galeria_01" > 
+            <img src="img/mini/salada.jpg" div class="foto_cardapio"> </a>
+        <h1> Saladas </h1>
+        <a href="salada.html"> <div class="a">  * Ver cardápio completo * </div>  </a>
+    </div>
+
+    <div class="cardapio"> 
+        <a href="img/cardapio/doces.jpg"data-lightbox="galeria_01"> 
+        <img src="img/mini/doces.jpg" div class="foto_cardapio"> </a>
+        <h1> Doces </h1>
+        <a href="doces.html"> <div class="a">  * Ver cardápio completo * </div>  </a>
+
+    </div>
+
+    <div class="cardapio"> 
+        <a href="img/cardapio/suco.jpg" data-lightbox="galeria_02"> 
+        <img src="img/mini/suco.jpg" div class="foto_cardapio"> </a>
+        <h1> Sucos </h1>
+        <p> Abacaxi, Laranja e Limão. </p>
+    </div>
+
+    <div class="cardapio">
+        <a href="img/cardapio/refrigerante.jpg" data-lightbox="galeria_02"> 
+        <img src="img/mini/refrigerante.jpg" div class="foto_cardapio"> </a>
+        <h1> Refrigerante </h1>
+        <p> Coca-Cola, Fanta e Sprite. </p>
+    </div>
+
+    <div class="cardapio"> 
+        <a href="img/cardapio/bebidas_quentes.jpg" data-lightbox="galeria_02"> 
+        <img src="img/mini/bebidas_quentes.jpg" div class="foto_cardapio"> </a>
+        <h1>  Bebidas Quentes </h1>
+        <p> Café, Cappucino e Chá. </p>
+    </div>
+
+   </div>
+    <div id="rodape"> <p> 2000-2020 cybercafe.com Todos os direitos reservados </p> </div> 
+</div>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Cyber Café </title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <style type="text/css">
+        
+        .divisao_01{
+            width: 370px;
+            height: 274px;
+            float: left;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+
+        .divisao_02{
+            width: 370px;
+            height: 274px;
+            float: left;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+
+        .divisao_03{
+            width: 490px;
+            height: 274px;
+            float: left;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+
+        .foto_promocoes{
+            width: 250px;
+            height: 274px;
+            position: relative;
+            left: 500px;
+            top: -170px;
+            margin: 10px;
+        }
+
+        h1{ 
+            font-size: 30px;
+        }
+        p{
+            font-size: 14px;
+        }
+        .p{
+            font-size: 13px;
+            color: #ffffff;
+        }
+        a{
+            font-size: 14px;
+            color: #ffffff;
+        }
+        a:hover{
+            color: #FFCC00;
+        }
+        </style>
+        <script language="javascript" type="text/javascript">
+            dayName = new Array ("domingo", "segunda", "terça", "quarta", "quinta", "sexta", "sábado")
+            monName = new Array ("janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "outubro", "novembro", "dezembro")
+            now = new Date
+        </script>
+    </head>
+<body>
+<div id="principal">
+    <div id="topo">
+        <div id="logo"><a href="index.html"> <img src="img/logo.png"> </a> </div>
+        <div id="data">
+            <script language=javascript type="text/javascript">
+                document.write ("<p> Hoje é " + dayName[now.getDay() ] + ", " + now.getDate () + " de " + monName [now.getMonth() ]   +  " de "  +     now.getFullYear () + ". </p>")
+            </script>
+        </div>
+    </div>
+    <div id="menu_principal"> 
+        <div id="menu_item"> 
+            <a href="index.html"><div class="link"> Home </div> </a>
+            <a href="promocoes.html"> <div class="link"> Promoções </div> </a>
+            <a href="servicos.html"> <div class="link"> Serviços  </div> </a>
+            <a href="cardapio.html"> <div class="link"> Cardápio </div> </a>
+            <a href="eventos.html"> <div class="link"> Eventos </div> </a>
+            <a href="contato.html"> <div class="link"> Contatos </div> </a>
+        </div>               
+    </div>
+
+   <div id="conteudo"> 
+        <div class="divisao_01"> 
+            <h1> Sorteio </h1>
+            <p> Concorra a um fone gamer. Para participar do sorteio basta somar 15 horas de utilização de nossos produtos, e comprar duas das de nossas opções do cardapio. <br>            
+            <br> <strong> Data e Horário: </strong> 30 de setembro, as 16:00. <br>
+            <strong> Local: </strong> em frente ao nosso estabelecimento.</p>
+        </div>
+
+        <div class="divisao_02"> 
+            <h1> Internet </h1>
+            <p> - Usando nossos produtos por 1 hora: <br> 
+                ganhe uma <a href="cardapio.html"> bebida. </a> <br> <br>
+                - Usando nossos produtos por 2 horas: <br> 
+                ganhe um copo de suco/refrigerante. <br> <br> 
+                - Usando nossos produtos por 3 horas: <br>
+                ganhe 1 hora de internet grátis. <br> <br>
+                - Usando mais de 17 horas semanais ganhe: <br>
+                2 horas de internet grátis e mais uma pizza.
+            </p> 
+        </div>
+        
+
+        <div class="divisao_03"> 
+            <h1> Promoção de Dia dos Pais </h1>
+            <p> Na compra de duas pizzas ou mais, você ganha um refrigerante e uma foto impressa de você e seu pai! <br> 
+                E ainda concorra a uma refeição completa (pizza, refrigerante/suco e doce). Não fique de fora! </p>
+                <div class="p"> *Promoção válida até o dia 09 de agosto de 2020. </p> </div>
+                <img src="img/promocoes/pais.png" class="foto_promocoes">
+        </div>
+   </div>
+
+   <div id="rodape">  <p> 2000-2020 cybercafe.com Todos os direitos reservados </p> </div>
+</div>
+</body>
+</html>
